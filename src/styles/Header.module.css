@@ -1,5 +1,68 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* make sure it appears above hero */
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
-  
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.header h1:hover {
+  color: black;
+}
+
+.nav {
+  display: flex;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 1.5rem;
+  transition: color 0.2s ease;
+}
+.link:hover {
+  color: black;
+}
+
+.cartWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.cartLink {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0.2rem 0.6rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.cartIcon {
+  height: 30px;
+  width: 30px;
+  fill: white;
+  transition: fill 0.2s ease;
+}
+.cartIcon:hover {
+  fill: black;
 }

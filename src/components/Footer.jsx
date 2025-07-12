@@ -1,7 +1,9 @@
+import styles from "../styles/Footer.module.css";
+
 function Footer() {
   return (
-    <footer className="site-footer">
-      <ul className="footer-links">
+    <footer className={styles.footer}>
+      <ul className={styles.links}>
         <li>
           <a
             href="https://github.com/Reuben-24"
@@ -9,6 +11,7 @@ function Footer() {
             rel="noopener noreferrer"
           >
             <svg
+              className={styles.icon}
               aria-hidden="true"
               width="16"
               height="16"
@@ -28,6 +31,7 @@ function Footer() {
             rel="noopener noreferrer"
           >
             <svg
+              className={styles.icon}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -43,6 +47,7 @@ function Footer() {
         <li>
           <a href="https://www.vecteezy.com/free-vector/sneakers">
             <svg
+              className={styles.icon}
               aria-hidden="true"
               fill="#000000"
               xmlns="http://www.w3.org/2000/svg"
@@ -98,11 +103,12 @@ function Footer() {
         </li>
       </ul>
 
-      <div className="license">MIT License</div>
+      <div className="license">MIT License.</div>
 
       <div className="footer-copyright">
         © {new Date().getFullYear()} Reuben Faltiska. All rights reserved.
       </div>
+      
     </footer>
   );
 }

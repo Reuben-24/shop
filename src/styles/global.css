@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, ul, li, button {
+  all: unset;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
