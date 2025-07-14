@@ -1,0 +1,9 @@
+- Add acknowledgement for hero background: https://www.pexels.com/@catiamatos/
+- Add acknowledgement for testimonials bg image: https://www.pexels.com/@rdne/
+- About page that explains the project (fictional store, done as part of the Odin Project curriculum, link to odin project, link to repo)
+
+
+
+
+
+- Double check meeting prompts in TOP project page

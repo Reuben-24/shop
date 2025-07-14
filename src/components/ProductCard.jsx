@@ -1,32 +1,54 @@
-import styles from "../styles/Showcase.module.css";
+import { Link, useOutletContext } from "react-router-dom";
 
-import { Link } from "react-router-dom";
+import { formatAsPrice } from "../utils.js"
 
 export default function ProductCard({ product, handleAddToCart }) {
   const { id, name, price, imageUrl } = product;
+
+  const { cart } = useOutletContext();
+
+  const isInCart = cart.some(p => p.id === product.id);
+
+  const handleAddToCartClick = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    handleAddToCart(product);
+  };
+
   return (
-    <Link to={`/product/${id}`}>
-      <img src={imageUrl} alt={name}></img>
-      <div>
-        <h3>{name}</h3>
-        <p>{price}</p>
-        <button onClick={() => handleAddToCart(product)}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="plus-icon"
-            >
-              <line x1="12" y1="5" x2="12" y2="19" />
-              <line x1="5" y1="12" x2="19" y2="12" />
-            </svg>
-        </button>
+    <Link className="productCard" to={`/product/${id}`}>
+      <div className="productImageWrapper">
+        <img className="productImage" src={imageUrl} alt={name}></img>
+      </div>
+      <div className="productDetails">
+        <h3 className="productName">{name}</h3>
+        <div className="cardDetailsBottomContainer">
+          <p className="productPrice">{formatAsPrice(price)}</p>
+          <button className="addToCartButton"
+            onClick={handleAddToCartClick}>
+              { isInCart ? (
+                <svg className="addedIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"
+                  strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              ) : (
+                <svg
+                  className="addIcon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              )}
+          </button>
+        </div>
       </div>
     </Link>
   );

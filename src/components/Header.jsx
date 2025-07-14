@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 import styles from "../styles/Header.module.css";
 
-function Header() {
+function Header({ isTransparent }) {
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${isTransparent ? styles.transparentHeader : styles.solidHeader}`}>
       <h1>
         <Link to="/">SoleJunkie</Link>
       </h1>

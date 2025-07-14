@@ -15,17 +15,17 @@ const products = [
   },
   {
     id: 3,
-    name: "Nike KD18",
-    price: 219.95,
-    description: "Kevin Durant's true edge lies in his endurance—the Slim Reaper plays with relentless energy and passion, especially when the pressure's on. This design combines Air Zoom and Nike Air for exceptional responsiveness, while a perforated upper keeps things light and breathable, letting KD go hard from tip-off to the final buzzer.",
-    imageUrl: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/26d4358b-a54f-4a3b-b30f-82d3eb34515f/KD18.png",
-  },
-  {
-    id: 4,
     name: "Nike LeBron XXI 'Prime 96'",
     price: 274.95,
     description: "Deion Sanders’ iconic swagger left a lasting impression on a young LeBron, inspiring his pursuit of greatness. Now, as LeBron marks his 21st season, this special-edition LeBron 21 honors both legends. Taking cues from the Nike Air Diamond Turf '96, it features Deion’s signature midfoot strap and claw mark detailing, paired with Air Zoom cushioning built for today’s game. The colorway? A clear tribute to Coach Prime’s team roots.",
     imageUrl: "https://static.nike.com/a/images/w_1280,q_auto,f_auto/e1917425-354d-4033-af56-c28ccb50301d/lebron-xxi-prime-96-release-date.jpg",
+  },
+  {
+    id: 4,
+    name: "Nike KD18",
+    price: 219.95,
+    description: "Kevin Durant's true edge lies in his endurance—the Slim Reaper plays with relentless energy and passion, especially when the pressure's on. This design combines Air Zoom and Nike Air for exceptional responsiveness, while a perforated upper keeps things light and breathable, letting KD go hard from tip-off to the final buzzer.",
+    imageUrl: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/26d4358b-a54f-4a3b-b30f-82d3eb34515f/KD18.png",
   },
   {
     id: 5,
