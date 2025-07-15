@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 
+import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 import productsData from "./products.js";
-import { formatAsPrice } from "./utils.js";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -13,14 +13,6 @@ function App() {
 
   const location = useLocation();
   const isShowcase = location.pathname === "/";
-
-  const cartTotalQuantity = cart.reduce(
-    (total, product) => total + product.quantity,
-    0
-  );
-  const cartTotalPriceFormatted = formatAsPrice(
-    cart.reduce((total, product) => total + product.price, 0)
-  );
 
   useEffect(() => {
     setProducts(productsData);
@@ -42,12 +34,11 @@ function App() {
     });
   };
 
-
   return (
     <>
+      <ScrollToTop />
       <Header
-        cartTotalQuantity={cartTotalQuantity}
-        cartTotalPriceFormatted={cartTotalPriceFormatted}
+        cart={cart}
         isTransparent={isShowcase}
       />
       <Outlet context={{ products, cart, handleAddToCart }} />

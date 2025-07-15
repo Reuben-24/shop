@@ -1,0 +1,238 @@
+.productDisplayContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f2f4f8;
+}
+
+.productDisplay {
+  padding: 20px;
+  margin-top: 20px;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.goBackButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #555;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 9999px;
+  transition: background-color 0.2s ease;
+  margin-bottom: 10px;
+}
+.goBackButton:hover {
+  background-color: #222;
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.productInfo h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.productPrice {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #6d6d6d;
+  margin-bottom: 20px;
+}
+
+.productDescription {
+  font-weight: 200;
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.addToCartForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.addToCartForm label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.orderDetails input[type="number"] {
+  box-sizing: border-box;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.orderDetails button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #007acc;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 9999px;
+  transition: background-color 0.2s ease;
+  margin-bottom: 10px;
+}
+.orderDetails button:hover {
+  background-color: #005f99;
+}
+
+.successMessage {
+  margin-bottom: 10px;
+}
+
+.orderDetails a {
+  border-radius: 9999px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4caf50;
+  color: white;
+  font-weight: 700;
+  padding: 12px 20px;
+}
+.orderDetails a:hover {
+  background-color: #43a047;
+}
+
+.generalInfo {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.generalInfo h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #111;
+}
+
+.generalInfo h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+  border-left: 4px solid #007acc;
+  padding-left: 12px;
+}
+
+.generalInfo p {
+  margin-bottom: 1rem;
+}
+
+.generalInfo a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.generalInfo a:hover {
+  color: #005f99;
+  text-decoration: underline;
+}
+
+.notFound {
+  padding: 80px 24px;
+  text-align: center;
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 100px auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.notFound p {
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.notFound button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.notFound button:hover {
+  background-color: #005f9e;
+}
+
+@media (max-width: 768px) {
+  .productDisplay {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .imageWrapper {
+    justify-content: center;
+  }
+
+  .productImage {
+    max-width: 300px;
+  }
+
+  .generalInfo {
+    padding: 30px 16px;
+  }
+
+  .generalInfo h2 {
+    font-size: 1.5rem;
+  }
+
+  .generalInfo h3 {
+    font-size: 1.1rem;
+  }
+}

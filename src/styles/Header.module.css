@@ -45,9 +45,11 @@
 .cartWrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .cartLink {
+  font-weight: 200;
   position: relative;
   display: flex;
   align-items: center;
