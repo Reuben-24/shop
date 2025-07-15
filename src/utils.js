@@ -7,18 +7,17 @@ function formatAsPrice(number) {
 }
 
 function escapeRegExp(str) {
-  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
-
 
 function isSearchMatch(searchTerm, name) {
   const escaped = searchTerm
     .trim()
     .split(/\s+/)
-    .map(term => escapeRegExp(term));
+    .map((term) => escapeRegExp(term));
 
-  const regex = new RegExp(escaped.map(t => `(?=.*${t})`).join(''), 'i');
-    
+  const regex = new RegExp(escaped.map((t) => `(?=.*${t})`).join(""), "i");
+
   return regex.test(name);
 }
 

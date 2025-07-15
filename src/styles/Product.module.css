@@ -31,7 +31,9 @@
   border-radius: 9999px;
   transition: background-color 0.2s ease;
   margin-bottom: 10px;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
 }
 .goBackButton:hover {
   background-color: #222;
@@ -130,7 +132,9 @@
   color: white;
   font-weight: 700;
   padding: 12px 20px;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
 }
 .orderDetails a:hover {
   background-color: #43a047;
@@ -143,7 +147,7 @@
   background-color: #f9f9f9;
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
-  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-family: "Segoe UI", Roboto, sans-serif;
   color: #333;
   line-height: 1.7;
 }

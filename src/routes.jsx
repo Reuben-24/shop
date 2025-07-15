@@ -6,19 +6,18 @@ import Cart from "./components/Cart";
 import Product from "./components/Product";
 import About from "./components/About";
 
-
 const routes = [
   {
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      { index: true, element: <Showcase />},
+      { index: true, element: <Showcase /> },
       { path: "browse", element: <Browse /> },
       { path: "product/:id", element: <Product /> },
       { path: "cart", element: <Cart /> },
       { path: "about", element: <About /> },
-    ]
+    ],
   },
 ];
 

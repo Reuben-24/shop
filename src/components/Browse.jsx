@@ -28,11 +28,11 @@ function Browse() {
 
     if (searchInputValue.trim()) {
       filtered = products.filter((product) =>
-        isSearchMatch(searchInputValue, product.name)
+        isSearchMatch(searchInputValue, product.name),
       );
     }
 
-    const sorted = sortProducts(filtered, sortInputValue)
+    const sorted = sortProducts(filtered, sortInputValue);
     setDisplayedProducts(sorted);
   }, [searchInputValue, sortInputValue, products]);
 
@@ -79,12 +79,14 @@ function Browse() {
       <section className={styles.productDisplay}>
         <h2 className={styles.productsDisplayHeading}>
           {searchInputValue
-            ? `Found ${displayedProducts.length} result${displayedProducts.length === 1 ? '' : 's'} for: "${searchInputValue}"`
+            ? `Found ${displayedProducts.length} result${displayedProducts.length === 1 ? "" : "s"} for: "${searchInputValue}"`
             : `All Products (${displayedProducts.length})`}
         </h2>
         <div className={styles.productsContainer}>
           {displayedProducts.length === 0 ? (
-            <p className={styles.noProductsFoundMessage}>No products found for this search.</p>
+            <p className={styles.noProductsFoundMessage}>
+              No products found for this search.
+            </p>
           ) : (
             displayedProducts.map((product) => (
               <ProductCard

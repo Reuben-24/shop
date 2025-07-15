@@ -8,26 +8,25 @@ function ProductGeneralInfo() {
       <p>
         All orders are processed within 1–2 business days. Standard shipping
         typically takes 3–7 business days, while express options are available
-        at checkout. We currently ship Australia-wide with tracking included
-        on all deliveries.
+        at checkout. We currently ship Australia-wide with tracking included on
+        all deliveries.
       </p>
 
       <h3>Returns & Exchanges</h3>
       <p>
-        Not happy with your order? No worries — we offer a 30-day return
-        policy on all unused items in their original packaging. To start a
-        return or exchange, simply contact our support team with your order
-        number. Please note: return shipping costs are the responsibility of
-        the customer unless the item is faulty.
+        Not happy with your order? No worries — we offer a 30-day return policy
+        on all unused items in their original packaging. To start a return or
+        exchange, simply contact our support team with your order number. Please
+        note: return shipping costs are the responsibility of the customer
+        unless the item is faulty.
       </p>
 
       <h3>Satisfaction Guarantee & Customer Support</h3>
       <p>
         We stand by the quality of every product we sell. If something isn’t
-        right, let us know — we’ll make it right. For any questions, email us
-        at <a href="mailto:support@example.com">support@example.com</a> or
-        reach out via our <a href="/contact">contact form</a>. We're here to
-        help!
+        right, let us know — we’ll make it right. For any questions, email us at{" "}
+        <a href="mailto:support@example.com">support@example.com</a> or reach
+        out via our <a href="/contact">contact form</a>. We're here to help!
       </p>
 
       <h3>International Orders</h3>
@@ -54,9 +53,9 @@ function ProductGeneralInfo() {
 
       <h3>Disclaimer</h3>
       <p>
-        Product images are for illustrative purposes only and may vary
-        slightly from the final product. Availability and specifications are
-        subject to change without notice.
+        Product images are for illustrative purposes only and may vary slightly
+        from the final product. Availability and specifications are subject to
+        change without notice.
       </p>
     </section>
   );

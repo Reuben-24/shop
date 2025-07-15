@@ -115,7 +115,8 @@ function Footer() {
       </ul>
 
       <div className={styles.footerCopyright}>
-        MIT License. © {new Date().getFullYear()} Reuben Faltiska. All rights reserved.
+        MIT License. © {new Date().getFullYear()} Reuben Faltiska. All rights
+        reserved.
       </div>
     </footer>
   );

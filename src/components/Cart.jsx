@@ -44,7 +44,10 @@ function Cart() {
                   />
                 ))}
               </ul>
-              <button className={styles.clearCartButton} onClick={handleClearCart}>
+              <button
+                className={styles.clearCartButton}
+                onClick={handleClearCart}
+              >
                 Clear Cart
               </button>
             </section>
@@ -76,7 +79,9 @@ function Cart() {
                     {formatAsPrice(orderTotal)}
                   </span>
                 </div>
-                <span className={styles.orderSubtext}>Inclusive of 10% GST</span>
+                <span className={styles.orderSubtext}>
+                  Inclusive of 10% GST
+                </span>
               </div>
               <Link className={styles.checkoutButton} to="/about">
                 Checkout

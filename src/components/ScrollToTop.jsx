@@ -9,7 +9,7 @@ function ScrollToTop() {
     if (navigationType === "PUSH") {
       window.scrollTo(0, 0);
     }
- }, [location, navigationType])
+  }, [location, navigationType]);
 
   return null;
 }

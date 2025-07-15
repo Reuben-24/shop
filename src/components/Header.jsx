@@ -5,18 +5,26 @@ import { formatAsPrice } from "../utils";
 
 function Header({ isTransparent, cart, cartTotalQuantity, cartTotalPrice }) {
   return (
-    <header className={`${styles.header} ${isTransparent ? styles.transparentHeader : styles.solidHeader}`}>
-      <Link to="/"><h1>SoleJunkie</h1></Link>
+    <header
+      className={`${styles.header} ${isTransparent ? styles.transparentHeader : styles.solidHeader}`}
+    >
+      <Link to="/">
+        <h1>SoleJunkie</h1>
+      </Link>
       <nav className={styles.nav}>
         <ul className={styles.links}>
           <li>
-            <Link className={styles.link} to="/browse">Browse</Link>
+            <Link className={styles.link} to="/browse">
+              Browse
+            </Link>
           </li>
 
           <li>
-            <Link className={styles.link} to="/about">About</Link>
+            <Link className={styles.link} to="/about">
+              About
+            </Link>
           </li>
-  
+
           <li className={styles.cartWrapper}>
             <Link to="/cart" className={styles.cartLink}>
               <svg
@@ -33,7 +41,10 @@ function Header({ isTransparent, cart, cartTotalQuantity, cartTotalPrice }) {
                 <path d="M11.1964 17.5171C11.1964 16.8586 10.9349 16.227 10.4692 15.7615C10.0037 15.2958 9.37215 15.0343 8.71366 15.0343C8.05518 15.0343 7.42363 15.2958 6.95793 15.7615C6.49242 16.227 6.23071 16.8586 6.23071 17.5171C6.23071 18.1755 6.49242 18.8071 6.95793 19.2728C7.42362 19.7383 8.05518 20 8.71366 20C9.37158 19.9986 10.0024 19.7365 10.4678 19.2712C10.9331 18.8058 11.1952 18.1752 11.1964 17.5171ZM7.27903 17.5171C7.27903 17.1373 7.42986 16.7732 7.69854 16.5047C7.96703 16.236 8.33117 16.0852 8.71092 16.0852C9.09084 16.0852 9.45498 16.236 9.72348 16.5047C9.99198 16.7732 10.1428 17.1373 10.1428 17.5171C10.1428 17.8968 9.99198 18.2611 9.72348 18.5296C9.45499 18.7981 9.09085 18.949 8.71092 18.949C8.33137 18.9484 7.96756 18.7972 7.69929 18.5289C7.43079 18.2604 7.27976 17.8966 7.27903 17.5171Z"></path>
               </svg>
               {cart.length > 0 && (
-                <span>{cartTotalQuantity} Item{cartTotalQuantity > 1 && "s"} | {formatAsPrice(cartTotalPrice)}</span>
+                <span>
+                  {cartTotalQuantity} Item{cartTotalQuantity > 1 && "s"} |{" "}
+                  {formatAsPrice(cartTotalPrice)}
+                </span>
               )}
             </Link>
           </li>

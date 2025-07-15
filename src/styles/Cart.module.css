@@ -29,7 +29,8 @@
   align-items: flex-start;
 }
 
-.cartSummaryHeading, .orderSummaryHeading {
+.cartSummaryHeading,
+.orderSummaryHeading {
   font-size: 2rem;
   margin-bottom: 0px;
 }
@@ -104,22 +105,25 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
-  border: 1px solid  #e0e0e0;
+  border: 1px solid #e0e0e0;
   border-radius: 9999px;
 }
 
-.addButton, .minusButton {
+.addButton,
+.minusButton {
   padding: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 9999px;
 }
-.addButton:hover, .minusButton:hover {
+.addButton:hover,
+.minusButton:hover {
   background-color: #e0e0e0;
 }
 
-.plusIcon, .minusIcon {
+.plusIcon,
+.minusIcon {
   fill: black;
   height: 20px;
   width: 20px;
@@ -130,12 +134,14 @@
   align-items: center;
   justify-content: center;
   margin-top: 30px;
-  background-color: #333; 
+  background-color: #333;
   color: #fff;
   padding: 12px 36px;
   border-radius: 9999px;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
 }
 .clearCartButton:hover {
   background-color: #444;
@@ -150,7 +156,7 @@
 .flexSection {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid  #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
   padding-bottom: 20px;
 }
 
@@ -162,12 +168,14 @@
   padding-top: 20px;
 }
 
-.orderLabel, .orderValue {
+.orderLabel,
+.orderValue {
   font-weight: 400;
   color: #222;
 }
 
-.orderTotalLabel, .orderTotalValue {
+.orderTotalLabel,
+.orderTotalValue {
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 20px;
@@ -176,7 +184,7 @@
 .orderSubtext {
   text-align: right;
   font-weight: 300;
-  color:  #979797;
+  color: #979797;
 }
 
 .checkoutButton {
@@ -190,9 +198,10 @@
   font-weight: 700;
   padding: 12px;
   margin-top: 20px;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
 }
 .checkoutButton:hover {
   background-color: #43a047;
 }
-

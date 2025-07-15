@@ -34,7 +34,8 @@ function About() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}https://www.pexels.com/@catiamatos/
+              {" "}
+              https://www.pexels.com/@catiamatos/
             </a>
             . Testimonials background image sourced from
             <a
@@ -42,7 +43,8 @@ function About() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}https://www.pexels.com/@rdne/
+              {" "}
+              https://www.pexels.com/@rdne/
             </a>
             . Various sneaker images and icons sourced from
             <a
@@ -50,7 +52,8 @@ function About() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}Sneakers Vectors by Vecteezy
+              {" "}
+              Sneakers Vectors by Vecteezy
             </a>
             .
           </p>

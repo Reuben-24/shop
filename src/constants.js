@@ -1,3 +1,3 @@
-const shippingFee = 15.00;
+const shippingFee = 15.0;
 
 export { shippingFee };

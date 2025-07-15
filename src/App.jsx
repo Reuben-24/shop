@@ -16,11 +16,11 @@ function App() {
 
   const cartTotalQuantity = cart.reduce(
     (total, product) => total + product.quantity,
-    0
+    0,
   );
   const cartTotalPrice = cart.reduce(
     (total, product) => total + product.price * product.quantity,
-    0
+    0,
   );
 
   useEffect(() => {
@@ -33,7 +33,7 @@ function App() {
 
       if (existingProduct) {
         return prevCart.map((p) =>
-          p.id === product.id ? { ...p, quantity: p.quantity + quantity } : p
+          p.id === product.id ? { ...p, quantity: p.quantity + quantity } : p,
         );
       } else {
         return [...prevCart, { ...product, quantity }];
@@ -45,9 +45,7 @@ function App() {
     setCart((prevCart) => {
       return prevCart
         .map((p) =>
-          p.id === product.id
-            ? { ...p, quantity: p.quantity - quantity }
-            : p
+          p.id === product.id ? { ...p, quantity: p.quantity - quantity } : p,
         )
         .filter((p) => p.quantity > 0);
     });
@@ -55,7 +53,7 @@ function App() {
 
   const handleClearCart = () => {
     const confirmed = window.confirm(
-      "Are you sure you want to clear all items from your cart? This action cannot be undone."
+      "Are you sure you want to clear all items from your cart? This action cannot be undone.",
     );
     if (confirmed) {
       setCart([]);

@@ -1,9 +1,14 @@
 import styles from "../styles/Product.module.css";
 
-import {  useState } from "react";
-import { useParams, useOutletContext, Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import {
+  useParams,
+  useOutletContext,
+  Link,
+  useNavigate,
+} from "react-router-dom";
 
-import ProductGeneralInfo from "./ProductGeneralInfo"
+import ProductGeneralInfo from "./ProductGeneralInfo";
 
 import { formatAsPrice } from "../utils";
 
@@ -21,7 +26,9 @@ function Product() {
     return (
       <div className={styles.notFound}>
         <p>Sorry, this product doesn't exist.</p>
-        <button type="button" onClick={() => navigate(-1)}>← Go Back</button>
+        <button type="button" onClick={() => navigate(-1)}>
+          ← Go Back
+        </button>
       </div>
     );
   }
@@ -32,16 +39,17 @@ function Product() {
     handleAddToCart(product, quantity);
     setAddedMessageVisible(true);
     e.target.reset();
-  }
+  };
 
   return (
     <div className={styles.productDisplayContainer}>
       <section className={styles.productDisplay}>
         <div className={styles.imageWrapper}>
-          <button 
+          <button
             className={styles.goBackButton}
             type="button"
-            onClick={() => navigate(-1)}>
+            onClick={() => navigate(-1)}
+          >
             ← Go Back
           </button>
           <img
@@ -61,9 +69,10 @@ function Product() {
           </div>
 
           <div className={styles.orderDetails}>
-            <form 
+            <form
               className={styles.addToCartForm}
-              onSubmit={handleAddToCartSubmit}>
+              onSubmit={handleAddToCartSubmit}
+            >
               <label htmlFor="product-quantity-input">Quantity</label>
               <input
                 placeholder="e.g. 1"
@@ -76,7 +85,9 @@ function Product() {
               />
               <button type="submit">Add To Cart</button>
             </form>
-            {addedMessageVisible && <p className={styles.successMessage}>&#10003; Added to cart!</p>}
+            {addedMessageVisible && (
+              <p className={styles.successMessage}>&#10003; Added to cart!</p>
+            )}
             {cart.length > 0 && <Link to="/cart">Checkout</Link>}
           </div>
         </div>
