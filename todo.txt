@@ -1,7 +1,6 @@
 - Add acknowledgement for hero background: https://www.pexels.com/@catiamatos/
 - Add acknowledgement for testimonials bg image: https://www.pexels.com/@rdne/
 - About page that explains the project (fictional store, done as part of the Odin Project curriculum, link to odin project, link to repo)
-- Add items count and cart total to header display
 - When new page is navigated to, set up so it returns to the top of the page
 
 

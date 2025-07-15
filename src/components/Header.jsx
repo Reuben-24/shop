@@ -10,7 +10,7 @@ function Header({ isTransparent, cart }) {
     0
   );
   const cartTotalPriceFormatted = formatAsPrice(
-    cart.reduce((total, product) => total + product.price, 0)
+    cart.reduce((total, product) => total + (product.price * product.quantity), 0)
   );
 
   return (
