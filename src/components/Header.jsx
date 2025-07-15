@@ -12,6 +12,10 @@ function Header({ isTransparent, cart, cartTotalQuantity, cartTotalPrice }) {
           <li>
             <Link className={styles.link} to="/browse">Browse</Link>
           </li>
+
+          <li>
+            <Link className={styles.link} to="/about">About</Link>
+          </li>
   
           <li className={styles.cartWrapper}>
             <Link to="/cart" className={styles.cartLink}>

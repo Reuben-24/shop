@@ -1,0 +1,76 @@
+.aboutPageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutPage {
+  max-width: 900px;
+  padding: 40px 20px;
+  color: #222;
+  line-height: 1.7;
+}
+
+.aboutPage h1,
+.aboutPage h2 {
+  color: #111;
+  margin-bottom: 0.6em;
+  line-height: 1.3;
+}
+
+.aboutPage h1 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.aboutPage h2 {
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
+
+.aboutPage p {
+  margin-bottom: 1rem;
+}
+
+.aboutPage a {
+  color: #0057cc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.aboutPage a:hover {
+  color: #003e99;
+  text-decoration: underline;
+}
+
+.aboutPage section {
+  margin-bottom: 3rem;
+}
+
+.creatorLinks {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .aboutPage {
+    padding: 30px 16px;
+  }
+
+  .aboutPage h1 {
+    font-size: 2rem;
+  }
+
+  .aboutPage h2 {
+    font-size: 1.4rem;
+  }
+
+  .creatorLinks {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

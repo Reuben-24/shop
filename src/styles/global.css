@@ -89,11 +89,15 @@ button, a {
   color: black;
 }
 
-.addIcon {
-  stroke: #909090;
+.addToCartButton svg {
+  transition: opacity 1s ease;
+  transition: transform 1s ease;
   height: 30px;
   width: 30px;
-  transition: transform 0.3s ease;
+}
+
+.addIcon {
+  stroke: #909090;
 }
 .addToCartButton:hover .addIcon {
   stroke: #0070f3;
@@ -101,7 +105,4 @@ button, a {
 
 .addedIcon {
   stroke: #0070f3;
-  height: 30px;
-  width: 30px;
-  transition: transform 0.3s ease;
 }

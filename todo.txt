@@ -1,10 +1,3 @@
-- Add acknowledgement for hero background: https://www.pexels.com/@catiamatos/
-- Add acknowledgement for testimonials bg image: https://www.pexels.com/@rdne/
-- About page that explains the project (fictional store, done as part of the Odin Project curriculum, link to odin project, link to repo)
-- When new page is navigated to, set up so it returns to the top of the page
-- Fix add multiple products on tick glitch
-- Ensure product data used in cart pafge is from state variable so it live updates
-- random bug price not showing up in cart page when adjusting product, wuantity goes negative no idea how
-- Make friendly for mobile/tablet - go through each page, scroll viewport
 
-- Double check meeting prompts in TOP project page
+- Make friendly for mobile/tablet - go through each page, scroll viewport
+- Double check meeting prompts in TOP project pageH
