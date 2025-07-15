@@ -42,8 +42,12 @@ function Header({ isTransparent, cart, cartTotalQuantity, cartTotalPrice }) {
               </svg>
               {cart.length > 0 && (
                 <div className={styles.cartDetails}>
-                  <span className={styles.cartItems}>{cartTotalQuantity} Item{cartTotalQuantity > 1 && "s"}</span>
-                  <span className={styles.cartPrice}>{formatAsPrice(cartTotalPrice)}</span>
+                  <span className={styles.cartItems}>
+                    {cartTotalQuantity} Item{cartTotalQuantity > 1 && "s"}
+                  </span>
+                  <span className={styles.cartPrice}>
+                    {formatAsPrice(cartTotalPrice)}
+                  </span>
                 </div>
               )}
             </Link>
