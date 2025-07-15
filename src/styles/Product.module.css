@@ -31,6 +31,7 @@
   border-radius: 9999px;
   transition: background-color 0.2s ease;
   margin-bottom: 10px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 .goBackButton:hover {
   background-color: #222;
@@ -82,9 +83,9 @@
 }
 
 .addToCartForm label {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .orderDetails input[type="number"] {
@@ -129,6 +130,7 @@
   color: white;
   font-weight: 700;
   padding: 12px 20px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 .orderDetails a:hover {
   background-color: #43a047;
