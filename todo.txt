@@ -1,3 +1,0 @@
-
-- Make friendly for mobile/tablet - go through each page, scroll viewport
-- Double check meeting prompts in TOP project pageH
