@@ -5,7 +5,7 @@ import { formatAsPrice } from "../utils.js";
 
 export default function ProductCard({ product, handleAddToCart }) {
   const [justAdded, setJustAdded] = useState(false);
-  const { id, name, price, imageUrl } = product;
+  const { id, name, price } = product;
 
   const handleAddToCartClick = (e) => {
     e.preventDefault();
@@ -20,7 +20,11 @@ export default function ProductCard({ product, handleAddToCart }) {
   return (
     <Link className="productCard" to={`/product/${id}`}>
       <div className="productImageWrapper">
-        <img className="productImage" src={imageUrl} alt={name}></img>
+        <img
+          className="productImage"
+          src={`/product-images/${id}.jpg`}
+          alt={name}
+        ></img>
       </div>
       <div className="productDetails">
         <h3 className="productName">{name}</h3>

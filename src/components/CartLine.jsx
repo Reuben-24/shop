@@ -10,7 +10,7 @@ function CartLine({ product, handleAddToCart, handleRemoveFromCart }) {
       <div className={styles.imageWrapper}>
         <img
           className={styles.image}
-          src={product.imageUrl}
+          src={`/product-images/${product.id}.jpg`}
           alt={product.name}
         />
       </div>

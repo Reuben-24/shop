@@ -54,7 +54,7 @@ function Product() {
           </button>
           <img
             className={styles.productImage}
-            src={product.imageUrl}
+            src={`/product-images/${product.id}.jpg`}
             alt={product.name}
           ></img>
         </div>
