@@ -2,30 +2,9 @@
 
 ## About This Store
 
-**SoleJunkie** is a fictional e-commerce project built as learning exercise. It simulates a basic online storefront and shopping cart experience, covering core concepts in front-end web development.
+**SoleJunkie** is a fictional e-commerce project built as a learning exercise. It simulates a basic online storefront and shopping cart experience, covering core concepts in front-end web development.
 
 > **Note:** This is not a real store — no products are for sale, and no orders will be processed. It's strictly for learning and demonstration purposes.
-
----
-
-## Built With
-
-- **React** – Component-based architecture; routing via React Router
-- **Vite** – Fast development server and build tool
-- **CSS Modules** – Scoped styling for components
-- **ESLint** – JavaScript linting
-- **Prettier** – Code formatting
-
-
----
-
-## Features
-
-- Product listing with dynamic data
-- Shopping cart functionality
-- Responsive design for mobile and desktop
-- State management with React
-- Simulated checkout flow
 
 ---
 
@@ -51,6 +30,44 @@ cd solejunkie
 npm install
 npm run dev
 ```
+
+---
+
+## Built With
+
+- **React** – Component-based architecture; routing via React Router
+- **Vite** – Fast development server and build tool
+- **CSS Modules** – Scoped styling for components
+- **ESLint** – JavaScript linting
+- **Prettier** – Code formatting
+
+---
+
+## Features
+
+- Product listing with dynamic data
+- Shopping cart functionality
+- Responsive design for mobile and desktop
+- State management with React
+- Simulated checkout flow
+
+---
+
+## Project Structure
+
+```
+src/
+├── components/ # Reusable UI components
+├── assets/ # Static assets like images and icons
+├── styles/ # CSS modules
+├── App.jsx # Main application component
+├── main.jsx # Entry point
+├── constants.js # Fixed values (ie. flat rate shipping fee)
+├── routes.jsx # Routing logic
+└── utils.js # Misc. helper functions
+```
+
+---
 
 ## License
 
