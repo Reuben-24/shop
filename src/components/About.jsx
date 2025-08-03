@@ -7,16 +7,7 @@ function About() {
         <section className={styles.introSection}>
           <h1>About This Store</h1>
           <p>
-            This is a fictional e-commerce project built as part of the
-            <a
-              href="https://www.theodinproject.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              Odin Project
-            </a>{" "}
-            full-stack JavaScript curriculum. It simulates a basic online
+            This is a fictional e-commerce project built as a learning exercise. It simulates a basic online
             storefront and shopping cart experience.
           </p>
           <p>
